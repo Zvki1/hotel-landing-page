@@ -4,6 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hotel</title>
@@ -11,21 +12,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="homesection">
+    <div class="homesection" >
         <div class="header">
-        <h2 id="logo">Batata Hotel</h2> 
+        <h2 class="logo">Batata Hotel</h2> 
         <ul class="navbar"> 
-            <li id="home">Home</li>
-            <li>Services</li>
-            <li>About</li>
-            <li>Rooms</li>
-            <li>Contact</li>     
+            <li id="home"><a href="#homediv">Home</a></li>
+            <li><a href="#Servicesdiv">Services</a></li>
+            <li><a href="#Aboutid">About</a></li>
+            <li><a href="#Roomsid">Rooms</a></li>
+            <li><a href="#Contactid">Contact</a></li>     
         </ul>
         </div>
         <h1>Leave a unique experience <br> in our hotel</h1>
          <div></div>  <!-- a div to center the h1 using  the flexbox -->
     </div>
-    <div class="services">
+    <div class="services" id="Servicesid">
         <h2>Services</h2>
         <div id="content">
             <div class="element">
@@ -44,17 +45,106 @@
                 <h4>gym</h4>
                 <img src='\Assets\fitness (2).png' alt="">
             </div>
-            <div class="element">
-                <h4>taxi</h4>
-                <img src='\Assets\taxi (2).png' alt="">
-            </div>
+           
         </div>
         <div></div>
     </div>
-    <div class="About">
-        <h1>hello</h1>
+    <div class="About"id="Aboutid" >
+        <h2 data-aos="fade-up" data-aos-anchor-placement="center-center">About us</h2>
+        <div id="content_of_about">
+            <img src="/Assets/bg.jpg" alt="" class="tiltcard" data-tilt data-tilt-glare>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Fuga unde ducimus nam fugiat pariatur sapiente! 
+                Nostrum <br> minima vero quo cumque a vitae sed pariatur
+                 laboriosam sit optio, <br> aliquam dolore! Iusto.</p>
+        </div>
     </div>
-    <div class="Rooms"></div>
-    <div class="Contact"></div>
+    <div class="cta">
+        <h3>a super experience to tell</h3>
+        <button> Contact us </button>
+        <div></div>
+    </div>
+    <div class="Rooms" id="Roomsid">
+        <h2>Our Rooms</h2>
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <div class="slide first">
+                    <img src="/Assets/r1.jpg" alt="">
+                </div>
+                <div class="slide second">
+                    <img src="/Assets/r2.jpg" alt="">
+                </div>
+                <div class="slide third">
+                    <img src="/Assets/r3.jpg" alt="">
+                </div>
+                <div class="slide fourth">
+                    <img src="/Assets/r4.png" alt="">
+                </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+            </div>
+            <!-- manual navigation start -->
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+            </div>
+            <!-- manual navigation end -->
+        </div>
+    </div>
+    <div class="Contact"id="Contactid">
+        <div class="infos">
+        <h2 class="logo">Batata Hotel</h2>
+            <div class="cordonnes">
+                <p>rue sablette</p>
+                <p>+213 549660114</p>
+                <p>rzaki@hotmail.fr</p>
+            </div>
+        </div>
+        <div class="social-media">
+            <div id="facebook">
+                <img src="" alt="">
+            <p>facebook</p>
+            </div>
+            <div id="instagram">
+                <img src="" alt="">
+                <p>instagram</p>
+            </div>
+            <div id="twitter">
+                <img src="" alt="">
+                <p>twitter</p>
+            </div>
+        </div>
+        <div id="form">
+            
+            <input type="text" id="text" value="TYPE SOMETHING">
+            <input type="submit" value="send" class="button">
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script  src="vanilla-tilt.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
